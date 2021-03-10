@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title> Today's days </title>
+	<style>
+		body{
+			background-color: lightblue;
+		}
+		p{
+			text-decoration: underline;
+			text-align: center;
+			text-decoration-color: red;
+			color: green;
+			font-family: arial;
+			font-size: 100px;
+
+
+		}
+	</style>
+</head>
+<body>
+	<i><p id="demo"></p></i>
+
+	<script>
+		var day;
+		switch ( new Date().getDay()) {
+			
+			case 1:
+			day = "monday" ;
+			break ;
+
+			case 2:
+			day = "tuesday" ;
+			break;
+
+			case 3:
+			day = "wednesday" ;
+			break;
+
+			case 4:
+			day = "thursday" ;
+            break;
+
+            case 5:
+            day = "friday" ;
+            break;
+
+            case 6:
+            day = "saturday" ;
+            break;
+
+
+			default:
+			day = "Sunday";
+
+		}
+		  
+		   document.getElementById("demo").innerHTML = "Today is " + day;
+		
+
+	</script>
+
+</body>
+</html>
